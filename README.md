@@ -1,3 +1,1 @@
 # iCodeVEC.github.io
-# Site Under Construction .......
-# We apologize for the inconvenience ,please bear with us for the moment.
