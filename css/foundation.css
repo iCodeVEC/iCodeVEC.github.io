@@ -15,6 +15,7 @@
      *    IE on Windows Phone and in iOS.
      */
 html {
+  margin:none 
   font-family: sans-serif;
   /* 1 */
   line-height: 1.15;
@@ -22,7 +23,8 @@ html {
   -ms-text-size-adjust: 100%;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  /* 3 */
+   }
 
 /* Sections
        ========================================================================== */
@@ -492,9 +494,8 @@ pre {
   display: none !important; }
 
 .row {
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto; }
+
+}
   .row::before, .row::after {
     display: table;
     content: ' '; }
@@ -534,12 +535,10 @@ pre {
 .column, .columns {
   width: 100%;
   float: left;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem; }
+ }
   @media print, screen and (min-width: 40em) {
     .column, .columns {
-      padding-right: 0.9375rem;
-      padding-left: 0.9375rem; } }
+     } }
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: right; }
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
