@@ -1374,7 +1374,8 @@ h6 {
 
 a {
   line-height: inherit;
-  color: #1779ba;
+  color:black;
+
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
@@ -1400,7 +1401,8 @@ dl {
   line-height: 1.6; }
 
 li {
-  font-size: inherit; }
+  font-size: inherit;
+ }
 
 ul {
   margin-left: 1.25rem;
@@ -2374,10 +2376,11 @@ select {
 .menu-text {
   padding-top: 0;
   padding-bottom: 0;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 8rem;
   font-weight: bold;
+  font-size: 150%;
   line-height: 1;
-  color: inherit; }
+  color: black; }
 
 .menu-centered {
   text-align: center; }
@@ -2539,7 +2542,8 @@ select {
   margin-top: -3px; }
 
 [data-whatinput='mouse'] .dropdown.menu a {
-  outline: 0; }
+  outline: 0; 
+}
 
 .no-js .dropdown.menu ul {
   display: none; }
@@ -2686,6 +2690,7 @@ select {
   top: 100%;
   right: 0;
   left: auto; }
+
 
 .is-dropdown-menu.vertical {
   width: 100px; }
@@ -3648,9 +3653,10 @@ a.thumbnail {
   a.thumbnail image {
     box-shadow: none; }
 
+
 .title-bar {
-  padding: 0.5rem;
-  background: #0a0a0a;
+  
+  background: white;
   color: #fefefe; }
   .title-bar::before, .title-bar::after {
     display: table;
@@ -3672,6 +3678,7 @@ a.thumbnail {
   display: inline-block;
   vertical-align: middle;
   font-weight: bold; }
+
 
 .has-tip {
   position: relative;
@@ -4397,8 +4404,6 @@ a.thumbnail {
   animation-delay: 700ms !important; }
 
 
-
-
 .navbar{
   background-color: #009688
 ;
@@ -4409,6 +4414,7 @@ a.thumbnail {
 .navbar a{
   color: #E0F7FA;
   font-variant: small-caps;
+
 }
 
 h2 { 
@@ -4456,28 +4462,68 @@ h2 {
   background-image: url("http://imagenes.in/wp-content/uploads/2014/07/fondos-de-pantalla-hd-para-led-y-lcd-wallpapers-los-mejores-fondos-de-pantalla-hd-taringa-789.jpg");
   min-height: 200px;
 }
-/*------------------------------------------------------ This is the slide show---------------------------------------------------------------------------------*/
-.mySlides img{
-  width: 100px;
+/*------------------------------------------------------ This is the slide show and nav for screen---------------------------------------------------------------------------------*/
+.dropdown li  {
+  
+  margin-left: 100px;
+  }
+.dropdown >li >a {
+  padding-left:30px;
+  padding-right:30px;
+  margin: 0;
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+font-variant: small-caps;
+
+  }
+  .dropdown li:hover a{
+  color: white;
+  background-color: black;
+  
+  }
+  .line{
+    height:3px;
+    background-color: black;
+    width:100%;
+    -webkit-animation-name: prog;
+  -webkit-animation-duration: 2s;
+  animation-name: prog;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+      
+  }
+  
+
+
+  .mySlides img{
+ width:100%;
+ opacity: 0.5;
+
 
 }
 
 /* Slideshow container */
 .slideshow-container {
-
+  margin-top: 10px;
+  border-bottom:3px solid white;
+  border-left:3px solid white; 
+  border-right:3px solid white;
   position: relative;
   margin: auto;
+  background-color: black;
 }
 
 /* Caption text */
 .text {
-  color: black;
-  font-size: 50px;
-  padding: 8px 12px;
+  color: white;
+  font-size:400%;
+  padding-left: 8% ;
   position: absolute;
   bottom: 50%;
-  width: 100%;
-  text-align: center;
+ 
+  
+
 }
 
 /* Number text (1/3 etc) */
@@ -4496,11 +4542,12 @@ h2 {
 }
 /* The dots/bullets/indicators */
 .dot {
-  height: 8px;
+  height: 5px;
   width: 30px;
+  margin-left: 2%;
 
   
-  background-color: black;
+  background-color: white;
  
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -4512,25 +4559,93 @@ h2 {
 
 /* Fading animation */
 .fade {
+  
   -webkit-animation-name: fade;
   -webkit-animation-duration: 5s;
   animation-name: fade;
   animation-duration: 5s;
+
+
 }
+.fadeout {
+  
+  -webkit-animation-name: fadeout;
+  -webkit-animation-duration: 6s;
+  animation-name: fadeout;
+  animation-duration: 6s;
+  
+
+
+}
+@keyframes prog {
+  from {
+    transform:scale(1,1);
+    
+    } 
+  to {
+    
+   transform:scale(-1,1)}
+}
+
+
 
 @-webkit-keyframes fade {
   from {
-    opacity:1;} 
-  to {opacity: 0;}
+    transform: scale(1);
+    opacity: 1;} 
+  to {transform: scale(0);
+    opacity: 0;}
 }
 
 @keyframes fade {
   from {
-    opacity:1;} 
-  to {opacity: 0;}
+    opacity: 0;
+    transform: scale(0.9);
+    } 
+  to {
+    transform: scale(1);
+    opacity: 1;}
 }
+@-webkit-keyframes fadeout {
+  from {transform: scale(0.5);
+    opacity: 1;
+    } 
+  to {transform: scale(1);
+    opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {
+    transform: scale(0.5);
+
+    } 
+  to {
+  transform: scale(1);}
+}
+
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+  @media screen and (max-width: 39.9375em) {
+    .text {
+  color: white;
+  font-size:200%;
+  padding-left: 8px ;
+  position: absolute;
+  bottom: 50%;
+}
+.dropdown .menu ul {
+  display: list-item; }
+.menu > li {
+
+    display: table-row;
+    vertical-align: middle; }
+.menu > li, .menu.horizontal > li {
+    display: table-row; }
+.title-bar-right{
+  display: none;  
+}
+
+  }
