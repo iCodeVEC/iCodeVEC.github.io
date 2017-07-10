@@ -5,6 +5,26 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iCode</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+  <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="oOwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="booty.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
+  <link rel="stylesheet" href="font/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script >
+    function alt(s){
+      location.href=s+".html";
+    }
+  </script>
+  <script src="assets/vendors/jquery.min.js"></script>
+  <script src="assets/owlcarousel/owl.carousel.js"></script>
 
      <link rel="stylesheet" href="css/animate.css">
      <link rel="stylesheet" href="css/foundation.css">
@@ -12,30 +32,116 @@
 </head>
 <body >
 
-<div class="row" >
-  <div  class="columns small-12 large-12 " data-sticky-container>
-    <div id="TB" class="title-bar sticky" data-sticky data-margin-top="0" data-options="marginTop:0;" style="width:100%" data-top-anchor="1"  >
-      <div class="title-bar-left" >
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">iCode</li>
-          <li class="ahov">
-            <a href="#">One</a>
-           </li>
-          <li class="ahov"><a href="#">Two</a></li>
-          <li class="ahov"><a href="#">Three</a></li>
-        </ul>
+<script >
+    $(window).scroll(function(e){ 
+  var $el = $('.fixedElement'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+    $('.fixedElement').css({'position': 'fixed', 'top': '0px', 'width': '100%'}); 
+  }
+  if ($(this).scrollTop() < 200 && isPositionFixed)
+  {
+    $('.fixedElement').css({'position': 'static', 'top': '0px', 'width': ''}); 
+  } 
+});
+  </script>
+  <div class="row mainav fixedElement">
+    <div class=" mnh col-xs-12 ">
+      <div class="">
+          <a href="#demo" class="" data-toggle="collapse"><h2 class="dd"><i class="fa fa-bars" aria-hidden="true"></i></h2></a>
+          <div id="demo" class="collapse">
+                  <div class="row">
+                    <div onclick="alt('index') " class=" mnn selecteds">
+                  <p>Home</p>
+                  </div>
+                  <div onclick="alt('about')" class=" mnn ">
+                  <p>About</p>
+                  </div>
+                  <div onclick="alt('event')" class=" mnn ">
+                  <p>Event</p>
+
+                  </div>
+                  <div onclick="alt('gallery')" class=" mnn ">
+                  <p>Gallery</p>
+                  </div>
+                  <div onclick="alt('resources')" class=" mnn ">
+                  <p>Resources</p>
+
+                  </div>
+                  <div onclick="alt('alumni')" class=" mnn ">
+                  <p>Alumni</p>
+
+                  </div>
+                  <div onclick="alt('contact')" class=" mnn ">
+                   <p>Contact</p>
+
+                  </div>
+                  <div onclick="alt('index')" class=" mnn ">
+                  <p>Home</p>
+                  </div>
+                  
+                      <div class="col-xs-4">
+                        <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="   col-xs-4">
+                        <a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="   col-xs-4">
+                        <a href="#"><i class="fa  fa-map-marker fa-lg" aria-hidden="true"></i></a>
+                      </div>
+                  
+                  
+                </div>
+        </div>
       </div>
-    <div class="title-bar-right">
-    <ul class="menu">
-      <li></li>
-      <li></li>
-    </ul>
     </div>
+    <div onclick="alt('index')" value="home" class="selecteds mn col-lg-offset-1 col-lg-1   col-xs-3 col-sm-offset-1 col-sm-1 col-md-offset-1 col-md-1">
+    <p >Home<a ></a></p>
+    </div>
+    <div onclick="alt('about')" class=" mn col-lg-1 col-xs-3 col-sm-1 col-md-1">
+    <p>About<a href="#"></a></p>
+
+    </div>
+    <div onclick="alt('event')" class=" mn col-lg-1 col-xs-3 col-sm-1 col-md-1">
+    <p>Event<a href="#"></a></p>
+
+    </div>
+    <div onclick="alt('gallery')" class=" mn col-lg-1 col-xs-3 col-sm-1 col-md-1">
+    <p>Gallery<a href="#"></a></p>
+
+    </div>
+    <div onclick="alt('resources')" class=" mn col-lg-1 col-xs-3 col-sm-1 col-md-1">
+    <p>Resources<a href="#"></a></p>
+
+    </div>
+    <div onclick="alt('alumni')" class=" mn col-lg-1 col-xs-3 col-sm-1 col-md-1">
+    <p>Alumni<a href="#"></a></p>
+
+    </div>
+    <div onclick="alt('contact')" class=" mn col-lg-1 col-xs-3 col-sm-1 col-md-1">
+    <p>Contact<a href="#"></a></p>
+
+    </div>
+    <div onclick="alt('index')" class=" mn col-lg-1 col-xs-3 col-sm-1 col-md-1">
+    <p>Home<a href="#"></a></p>
+    </div>
+    <div class="mns col-lg-2 col-md-2 col-sm-2 col-xs-12">
+      <div class="row">
+        <div class="mns    col-lg-4 col-sm-4 col-md-4 col-xs-4">
+          <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+        </div>
+        <div class="mns   col-lg-4 col-sm-4 col-md-4 col-xs-4">
+          <a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+        </div>
+        <div class="mns   col-lg-4 col-sm-4 col-md-4 col-xs-4">
+          <a href="#"><i class="fa  fa-map-marker fa-lg" aria-hidden="true"></i></a>
+        </div>
+      </div>
     </div>
   </div>
 
 
-</div>
+
   <div class="line">
     
 </div>
@@ -91,68 +197,256 @@ function showSlides() {
 </script>
 
 </div>
-
-
-
- <div class="columns small-12 large-12 ">
-  <div class="bgimg-2">
-    <div class="caption">
-      <span class="borderx" style="background-color:transparent;font-size:25px;color: #FFFF00;">Lorem Ipsum</span>
+</div>
+<div class="row">      
+    <div class="col-lg-12 common1 "> 
+      
+      <h1 class="abtbranchheader">Lorem Ipsum</h1>
+        <p class="abtbranch">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, bLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, b<<br>
+        </p>
+        <p class="aboutlink"><a  href="branch.html"><i class="fa fa-arrow-right fa-2x"></i></a></p>
+      
     </div>
   </div>
-</div>
 
-<div class="columns small-12 large-12 "> 
-  <div style="position:relative;">
-    <div style="color:white;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+  <script >
+      $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.common2').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                document.getElementById("common2").style.animation = "paper 1s 1";
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+  </script>
+<div class="row"> 
+    <div class="col-lg-12 col-md-12 col-sm-12  collegeheight">
+      <div class="col-lg-6 col-md-6 col-sm-6  col-xs-12 common2" id="common2">
+        <div class="paper">
+          <p class="visionh">Lorem</p>
+          <p class="visionl"></p>
+          <p class="visionp" style="height: 300px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6  col-xs-12 common2" id="common2">
+        <div class="paper">
+          <p class="visionh">Ipsum</p>
+          <p class="visionl"></p>
+          <p class="visionp" style="height: 300px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-<div class="columns small-12 large-12 ">
-  <div class="bgimg-3">
-    <div class="caption">
-      <span class="border" style="background-color:transparent;font-size:25px;color: #76FF03;">Lorem Ipsum
+  </div> 
+    <script >
+      $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.common3').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                document.getElementById("common3").style.animation = "paper 1s 1";
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+  </script>
+<div class="row " >
+  <div class="bgimg-3 " id="" style="height: 500px;">
+  <p>Lorem Ipsum</p>  
+    <div class="caption " >
+      <span class="border common3" id="common3" >Why Join ICode
   </span>
     </div>
   </div>
-</div>
+</div> 
+<br>
+<div class="row " id="three">
+                  <div class="col-lg-12 col-sm-12" >
+                  <p style="color: #03679A;">LOREM IPSUM</p>
+                  </div>
 
-<div class="columns small-12 large-12 ">
-  <div style="position:relative;">
-    <div style="color:white;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                  <div class="col-lg-4 col-xs-12 col-sm-4  exehead common3" >
+                    <div class="card" >
+                      <a href="#"><p style="border-top: 2px solid black;color: black;  ">Lorem Ipsum</p> 
+                     <h4 style="font-size: 1.2em; text-align: justify; padding-left:50px; padding-right: 50px; padding-bottom:50px; color: #526272;font-family: 'play';height: 250px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, b<</h4>  </a>
+                     
+                    <br>
+                    </div>
+                  </div>
+                 <div class="col-lg-4 col-xs-12 col-sm-4  exehead common3" >
+                    <div class="card" >
+                      <a href="#"><p style="border-top: 2px solid black;color: black;  ">Lorem Ipsum</p> 
+                     <h4 style="font-size: 1.2em; text-align: justify; padding-left:50px; padding-right: 50px; padding-bottom:50px; color: #526272;font-family: 'play';height: 250px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, b<</h4>  </a>
+                     
+                    <br>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-xs-12 col-sm-4  exehead common3" >
+                    <div class="card" >
+                      <a href="#"><p style="border-top: 2px solid black;color: black;  ">Lorem Ipsum</p> 
+                     <h4 style="font-size: 1.2em; text-align: justify; padding-left:50px; padding-right: 50px; padding-bottom:50px; color: #526272;font-family: 'play';height: 250px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, b<</h4>  </a>
+                     
+                    <br>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-xs-12 col-sm-4  exehead common3" >
+                    <div class="card" >
+                      <a href="#"><p style="border-top: 2px solid black;color: black;  ">Lorem Ipsum</p> 
+                     <h4 style="font-size: 1.2em; text-align: justify; padding-left:50px; padding-right: 50px; padding-bottom:50px; color: #526272;font-family: 'play';height: 250px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, b<</h4>  </a>
+                     
+                    <br>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-xs-12 col-sm-4  exehead common3" >
+                    <div class="card" >
+                      <a href="#"><p style="border-top: 2px solid black;color: black;  ">Lorem Ipsum</p> 
+                     <h4 style="font-size: 1.2em; text-align: justify; padding-left:50px; padding-right: 50px; padding-bottom:50px; color: #526272;font-family: 'play';height: 250px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, b<</h4>  </a>
+                     
+                    <br>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-xs-12 col-sm-4  exehead common3" >
+                    <div class="card" >
+                      <a href="#"><p style="border-top: 2px solid black;color: black;  ">Lorem Ipsum</p> 
+                     <h4 style="font-size: 1.2em; text-align: justify; padding-left:50px; padding-right: 50px;padding-bottom:50px;  color: #526272;font-family: 'play';height: 250px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, <</h4>  </a>
+                     
+                    <br>
+                    </div>
+                  </div>
+                  
+                
+            </div>
+            <script >
+      $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.common4').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                document.getElementById("common4").style.animation = "paperrev 1s 1";
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+  </script>
+
+<div class="row " >
+  <div class="bgimg-3 " id="" style="height: 500px;">
+  <p>Lorem Ipsum</p>  
+    <div class="caption " >
+      <span class="border common4" id="common4" >Why Join ICode
+  </span>
     </div>
   </div>
-</div>
+</div>  
 
-<div class="columns small-12 large-12 ">
-  <div class="bgimg-4">
-    <div class="caption">
-      <span class="border" style="background-color:transparent;font-size:25px;color: #FF5722;">Lorem Ipsum</span>
+<div class="row "> 
+    <div class="col-lg-12 col-md-12 col-sm-12  collegeheight">
+      <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 common2" >
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="visionh">Lorem Ipsum</p>
+            <p class="visionl"></p>
+            <a href="https://www.ieee.org/index.html"><p class="ieeemainout"><img class="ieeemain" src="images/internship.jpg"><p class="ieeemainin"><i class="fa fa-chevron-right" aria-hidden="true"></i></p></p></a>
+          </div>
+          <div class="col-lg-12">
+            <p class="visionl"></p>
+            <p class="visionp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 common2" >
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="visionh">Lorem Ipsum</p>
+            <p class="visionl"></p>
+            <a href="https://www.ieee.org/about/vision_mission.html"><p class="ieeemainout"><img class="ieeemain" src="images/internship.jpg"><p class="ieeemainin"><i class="fa fa-chevron-right" aria-hidden="true"></i></p></p></a>
+          </div>
+          <div class="col-lg-12">
+            <p class="visionl"></p>
+            <p class="visionp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 common2" >
+        <div class="row">
+          <div class="col-lg-12">
+          <p class="visionh">Lorem Ipsum</p>
+          <p class="visionl"></p>
+          <a href="http://www.ieee.org/membership_services/membership/join/index.html"><p class="ieeemainout"><img class="ieeemain" src="images/internship.jpg"><p class="ieeemainin"><i class="fa fa-chevron-right" aria-hidden="true"></i></p></p></a>
+          </div>
+          <div class="col-lg-12">
+          
+          <p class="visionl"></p>
+          <p class="visionp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, </p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+</div>
+  <div class="row " style="border-top: 1px solid grey; border-bottom: 1px solid grey; padding-top: 50px;padding-bottom: 50px;">
+  <div class="three"> <p>Contact Us</p></div>
+    <div class="col-lg-offset-3 col-lg-4">  
+    <iframe class="map" src="https://docs.google.com/forms/u/0/d/e/1FAIpQLScLGcAvA7p2Rf9x-fqBdHT2zwL-0UpnTbKItmFF3BwAc0sYZA/viewform?embedded=true"  height="1500" frameborder="5px" marginheight="5px" marginwidth="0">Loading...</iframe>
     </div>
   </div>
-</div>
-
-<div class="columns small-12 large-12 ">
-  <div style="position:relative;">
-    <div style="color:white;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
-      <p style="text-align:left; padding-left:15%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+  <div class="row " style=" border-bottom: 1px solid grey; padding-top: 50px;">
+  <div class="three"> <p>Reach Us</p></div>
+    <div class=" col-lg-12">  
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.6069138173066!2d80.21890101482093!3d12.868646490923505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf70e4decbbd645ea!2sJeppiaar+Engineering+College!5e0!3m2!1sen!2sus!4v1498914368183" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
-</div>
 
-<div class="columns small-12 large-12 ">
-<div class="bgimg-5">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #FF5722;">Lorem Ipsum</span>
-  </div>
-</div>
-</div>
-</div>
-
-
+<footer class="footer footers">
+  <p>ICode</p>
+  <p><a href="">Home</a> | <a href="">Site Map</a> | <a href="">Contact</a> | <a href="">Privacy & Security</a> | <a href="">Terms & Conditions</a> | <a href="">Nondiscrimination Policy</a> </p>
+  <p>© Copyright 2017 ICODE - All Rights Reserved.</p>
+</footer>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
